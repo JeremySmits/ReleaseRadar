@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col-sm-6 col-md-8 col-lg-9">
+    <h1>Over deze applicatie</h1>
+    <p>
+      Deze applicatie is gemaakt in het kader van het vak 'Clientside web frameworks' van Avans Hogeschool
+      Breda.
+    </p>
+    <h3>ReleaseRadar</h3>
+    <p>
+      Op de de site ReleaseRadar kan een gebruiker de games zien die binnekort uitkomen. Ook kan een gebruiker
+      informatie vinden van verschillende publishers en ontwikkelaarsteams. De gebruiker kan een account
+      aanmaken en een game aan zijn of haar lijst toevoegen zodat hij of zij er makkelijk bij kan. Een
+      gebruiker met admin rechten kan games, publishers en ontwikkelaarsteams beheren, denk hierbij aan het
+      aanmaken verwijderen en veranderen van gegevens.
+    </p>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card">
+      <div class="d-flex justify-content-center align-items-center">
+        <img
+          src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/15894938_1172970982751438_6401237655253690718_n.jpg?_nc_cat=106&_nc_oc=AQltIofewWkpMuO1adoIt_twIZEiP9NX_upYm2O3SPvwJUl0LEf-4u53kZcje2KbunnJ-VQ2y2UKr31ha53om2Cl&_nc_ht=scontent-ams4-1.xx&oh=80d44915cf7acf1b9bfaf2eb4eca2798&oe=5E5AA84C"
+          class="card-img-top rounded-circle border profile-pic"
+          alt="..."
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Jeremy Smits</h5>
+        <p class="card-text">
+          Studentnummer: 2141535
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Entiteiten</h3>
+<div class="row">
+  <div class="col-sm-12 col-md-3">
+    <p>Game</p>
+    <ul>
+      <li>name: string</li>
+      <li>id: int</li>
+      <li>releaseDate: date</li>
+      <li>platform: list string</li>
+      <li>publisher: list publisher</li>
+      <li>developer: list developer</li>
+      <li>categorie: list string</li>
+      <li>price: double</li>
+      <li>image: string</li>
+      <li>discription: string</li>
+      <li>trailer: string</li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-3">
+    <p>Developer</p>
+    <ul>
+      <li>name: string</li>
+      <li>id: int</li>
+      <li>image: string</li>
+      <li>discription: string</li>
+      <li>games: list games</li>
+      <li>website: string</li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-3">
+    <p>Publisher</p>
+    <ul>
+      <li>name: string</li>
+      <li>id: int</li>
+      <li>image: string</li>
+      <li>discription: string</li>
+      <li>games: list games</li>
+      <li>website: string</li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-3">
+    <p>User</p>
+    <ul>
+      <li>email: string</li>
+      <li>id: int</li>
+      <li>password: string</li>
+      <li>subcribedGames: list games</li>
+      <li>isAdmin: boolean</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h3>Use Cases</h3>
+    <p>De applicatie biedt de volgende functionaliteit.</p>
+    <div *ngFor="let UC of useCases">
+      <app-usecase [useCase]="UC"></app-usecase>
+    </div>
+  </div>
+</div>
