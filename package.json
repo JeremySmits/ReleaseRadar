@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node src/server.js",
+    "start": "node server.js",
     "postinstall": "ng build --prod --aot",
     "build": "ng build",
     "pretty": "pretty-quick",
@@ -26,10 +26,8 @@
   "dependencies": {
     "@angular-devkit/build-angular": "^0.803.17",
     "@angular/animations": "~8.2.5",
-    "@angular/cli": "~8.3.4",
     "@angular/common": "~8.2.5",
     "@angular/compiler": "~8.2.5",
-    "@angular/compiler-cli": "~8.2.5",
     "@angular/core": "~8.2.5",
     "@angular/forms": "~8.2.5",
     "@angular/http": "^7.2.15",
@@ -40,7 +38,7 @@
     "bootstrap": "^4.3.1",
     "compression": "^1.7.3",
     "core-js": "^2.5.4",
-    "express": "^4.16.2",
+    "express": "^4.17.1",
     "path": "^0.12.7",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
@@ -48,11 +46,14 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
+    "@angular/cli": "^8.3.19",
+    "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "~8.2.5",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "enhanced-resolve": "^3.3.0",
     "husky": "^1.3.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
