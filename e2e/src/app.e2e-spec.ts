@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage()
   })
 
-  it('should display "My App" as navbar-brand', () => {
+  it('should display "ReleaseRadar" as navbar-brand', () => {
     page.navigateTo()
-    expect(page.getTitleText()).toEqual('My App')
+    expect(page.getTitleText()).toEqual('ReleaseRadar')
   })
 
   afterEach(async () => {
